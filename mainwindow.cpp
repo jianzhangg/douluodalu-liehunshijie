@@ -271,10 +271,7 @@ void MainWindow::onRightClicked()
 
 void MainWindow::onDouluoClicked()
 {
-    qDebug() << "Open DouluoPage";
+    qDebug() << "Navigate to DouluoPage (replace central widget)";
     auto *page = new DouluoPage(this);
-    page->setAttribute(Qt::WA_DeleteOnClose);
-    page->setWindowTitle(QStringLiteral("斗罗大陆-猎魂世界"));
-    page->resize(600, 400);
-    page->show();
+    setCentralWidget(page); // 覆盖原页面
 }
