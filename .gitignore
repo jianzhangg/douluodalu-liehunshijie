@@ -1,0 +1,90 @@
+# ---- OS 通用 ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---- 编辑器 ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- Qt/Qt Creator ----
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+.qmake.stash
+
+# Qt 自动生成文件（通常不需要入库）
+*_autogen/
+ui_*.h
+moc_*.cpp
+qrc_*.cpp
+
+# ---- CMake ----
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+Testing/
+_deps/
+
+# 常见 CMake 构建目录
+build/
+build-*/
+cmake-build-*/
+
+# Ninja
+build.ninja
+rules.ninja
+.ninja_deps
+.ninja_log
+
+# ---- Visual Studio / MSVC ----
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.*
+*.vcproj
+*.vcproj.*
+*.user
+*.user.*
+*.opensdf
+*.sdf
+*.suo
+*.vcxproj.filters
+
+# MSVC 编译产物
+*.obj
+*.idb
+*.pdb
+*.ipdb
+*.iobj
+*.pch
+*.ilk
+*.exp
+*.lib
+*.tlog
+*.lastbuildstate
+*.recipe
+*.log
+*.tmp
+*.cache
+
+# 可执行/库
+*.exe
+*.dll
+*.pyd
+*.so
+*.dylib
+
+# ---- 其它临时文件 ----
+*.swp
+*.swm
+*.swo
+*.bak
+*.orig
+*.rej
+
+
